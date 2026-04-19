@@ -126,7 +126,7 @@ export default function Contact() {
                     Serving
                   </div>
                   <div className="text-paper-50">
-                    Nationwide (remote) · On-site in the NYC area
+                    Nationwide (remote) · On-site in the CT area
                   </div>
                 </div>
               </div>
