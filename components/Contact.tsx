@@ -22,9 +22,38 @@ export default function Contact() {
     timing: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setSubmitting(true);
+    setError("");
+
+    try {
+      const response = await fetch("https://formspree.io/f/mvzdqzrr", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        setError(
+          "Something went wrong. Please email me directly at securewithquan@gmail.com"
+        );
+      }
+    } catch {
+      setError(
+        "Something went wrong. Please email me directly at securewithquan@gmail.com"
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const update = (field: keyof typeof form, value: string) =>
@@ -228,14 +257,23 @@ export default function Contact() {
 
                     <button
                       type="submit"
-                      className="group w-full bg-ink-900 text-paper-50 rounded-full py-4 px-6 flex items-center justify-center gap-2 hover:bg-ink-700 transition-colors text-sm tracking-wide"
+                      disabled={submitting}
+                      className="group w-full bg-ink-900 text-paper-50 rounded-full py-4 px-6 flex items-center justify-center gap-2 hover:bg-ink-700 transition-colors text-sm tracking-wide disabled:opacity-60 disabled:cursor-not-allowed"
                     >
-                      Request my free consultation
-                      <ArrowRightIcon
-                        className="w-4 h-4 transition-transform group-hover:translate-x-1"
-                        strokeWidth={2}
-                      />
+                      {submitting ? "Sending..." : "Request my free consultation"}
+                      {!submitting && (
+                        <ArrowRightIcon
+                          className="w-4 h-4 transition-transform group-hover:translate-x-1"
+                          strokeWidth={2}
+                        />
+                      )}
                     </button>
+
+                    {error && (
+                      <div className="text-sm text-red-600 text-center -mt-2">
+                        {error}
+                      </div>
+                    )}
 
                     <div className="flex items-center gap-2 justify-center text-xs text-ink-900/55 font-mono uppercase tracking-wider">
                       <LockIcon className="w-3.5 h-3.5" strokeWidth={1.75} />
