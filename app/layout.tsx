@@ -22,9 +22,43 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SecureWithQuan — Cybersecurity Risk Advisory for Small Businesses",
+  title: "SecureWithQuan | Cybersecurity Consulting for Small Businesses",
   description:
-    "Simple, practical cybersecurity consulting for small businesses. Clear risk assessments, honest recommendations, no long-term contracts.",
+    "Plain-English cybersecurity advisory for small businesses. Risk checkups, network and wireless reviews, staff training, and policy guidance. Flat-rate pricing, no long-term contracts. Book a free 30-minute consultation.",
+  keywords: [
+    "small business cybersecurity",
+    "cybersecurity consultant",
+    "cybersecurity risk assessment",
+    "small business security",
+    "phishing training",
+    "wireless security",
+    "cybersecurity policy",
+  ],
+  authors: [{ name: "SecureWithQuan LLC" }],
+  creator: "SecureWithQuan LLC",
+  metadataBase: new URL("https://securewithquan.com"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "SecureWithQuan | Cybersecurity Consulting for Small Businesses",
+    description:
+      "Plain-English cybersecurity advisory for small businesses. Flat-rate engagements, no long-term contracts. Book a free 30-minute consultation.",
+    url: "https://securewithquan.com",
+    siteName: "SecureWithQuan",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SecureWithQuan | Cybersecurity Consulting for Small Businesses",
+    description:
+      "Plain-English cybersecurity advisory for small businesses. Book a free 30-minute consultation.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
