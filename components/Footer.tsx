@@ -123,7 +123,7 @@ export default function Footer() {
                 <span>
                   Remote nationwide
                   <br />
-                  On-site in the NYC metro area
+                  On-site in the CT metro area
                 </span>
               </li>
             </ul>
