@@ -295,10 +295,10 @@ export default function Contact() {
                       business day with a few times that work for your call.
                       If it's urgent, feel free to email me directly at{" "}
                       <a
-                        href="mailto:hello@securewithquan.com"
+                        href="mailto:securewithquan@gmail.com"
                         className="text-ink-900 link-underline"
                       >
-                        hello@securewithquan.com
+                        securewithquan@gmail.com
                       </a>
                       .
                     </p>
