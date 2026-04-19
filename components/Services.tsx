@@ -13,7 +13,6 @@ type Service = {
   num: string;
   icon: React.ReactNode;
   name: string;
-  price: string;
   duration: string;
   tagline: string;
   explanation: string;
@@ -163,7 +162,7 @@ export default function Services() {
         {/* Post-list CTA */}
         <div className="mt-20 text-center">
           <p className="text-ink-900/60 text-sm mb-6 font-mono uppercase tracking-[0.18em]">
-            Not sure which one you need?
+            Pricing shared during your free consultation.
           </p>
           <a
             href="#contact"
@@ -204,9 +203,6 @@ function ServiceRow({ service }: { service: Service }) {
           </p>
         </div>
         <div className="col-span-6 lg:col-span-2 lg:text-right">
-          <div className="font-display text-2xl text-ink-900 font-light">
-            {service.price}
-          </div>
           <div className="text-[11px] text-ink-900/50 font-mono uppercase tracking-wider">
             {service.duration}
           </div>
