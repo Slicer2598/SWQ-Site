@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --grid-color: rgba(15, 26, 46, 0.05);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FBFAF7;
+  color: #0F1A2E;
+  font-feature-settings: "ss01", "cv11";
+}
+
+/* Subtle grid background */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.bg-grid-dark {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Noise texture overlay */
+.noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.035;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+/* Text balance for headlines */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Scroll reveal helper (respects reduced motion via tailwind) */
+.reveal {
+  opacity: 0;
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* Underline hover for inline links */
+.link-underline {
+  position: relative;
+}
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.link-underline:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #D4A574;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Custom selection */
+::selection {
+  background: #0F1A2E;
+  color: #FBFAF7;
+}
