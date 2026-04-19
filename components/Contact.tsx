@@ -88,7 +88,7 @@ export default function Contact() {
                 Prefer to reach out directly?
               </div>
               <a
-                href="mailto:hello@securewithquan.com"
+                href="mailto:securewithquan@gmail.com"
                 className="flex items-center gap-4 group"
               >
                 <span className="w-11 h-11 rounded-full border border-paper-50/15 flex items-center justify-center group-hover:border-accent group-hover:text-accent transition-colors">
@@ -99,12 +99,11 @@ export default function Contact() {
                     Email
                   </div>
                   <div className="text-paper-50 link-underline">
-                    hello@securewithquan.com
+                    securewithquan@gmail.com
                   </div>
                 </div>
               </a>
               <a
-                href="tel:+15555550123"
                 className="flex items-center gap-4 group"
               >
                 <span className="w-11 h-11 rounded-full border border-paper-50/15 flex items-center justify-center group-hover:border-accent group-hover:text-accent transition-colors">
@@ -115,7 +114,6 @@ export default function Contact() {
                     Phone
                   </div>
                   <div className="text-paper-50 link-underline">
-                    (555) 555-0123
                   </div>
                 </div>
               </a>
