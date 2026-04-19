@@ -26,7 +26,6 @@ const services: Service[] = [
     num: "01",
     icon: <ShieldIcon className="w-7 h-7" strokeWidth={1.5} />,
     name: "Small Business Cybersecurity Checkup",
-    price: "$400",
     duration: "Half-day review",
     tagline: "A friendly, top-to-bottom health check.",
     explanation:
