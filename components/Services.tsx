@@ -43,7 +43,6 @@ const services: Service[] = [
     num: "02",
     icon: <NetworkIcon className="w-7 h-7" strokeWidth={1.5} />,
     name: "Network Vulnerability Risk Assessment",
-    price: "$450",
     duration: "1–2 days",
     tagline: "What's open that shouldn't be?",
     explanation:
@@ -61,7 +60,6 @@ const services: Service[] = [
     num: "03",
     icon: <WifiIcon className="w-7 h-7" strokeWidth={1.5} />,
     name: "Wireless Security Risk Review",
-    price: "$250",
     duration: "A few hours",
     tagline: "Is your Wi-Fi quietly leaking?",
     explanation:
@@ -79,7 +77,6 @@ const services: Service[] = [
     num: "04",
     icon: <UsersIcon className="w-7 h-7" strokeWidth={1.5} />,
     name: "Staff Security Awareness Training",
-    price: "$500",
     duration: "90-minute session",
     tagline: "Turn your team into your first line of defense.",
     explanation:
@@ -97,7 +94,6 @@ const services: Service[] = [
     num: "05",
     icon: <FishingIcon className="w-7 h-7" strokeWidth={1.5} />,
     name: "Phishing Simulation Campaign",
-    price: "$600",
     duration: "2-week campaign",
     tagline: "See how your team handles a fake attack — safely.",
     explanation:
@@ -115,7 +111,6 @@ const services: Service[] = [
     num: "06",
     icon: <DocumentIcon className="w-7 h-7" strokeWidth={1.5} />,
     name: "Cybersecurity Policy Advisory",
-    price: "$900",
     duration: "2–3 weeks",
     tagline: "Write down the rules — so everyone knows them.",
     explanation:
