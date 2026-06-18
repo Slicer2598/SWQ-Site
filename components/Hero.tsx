@@ -30,10 +30,11 @@ export default function Hero() {
           {/* Subhead */}
           <div className="col-span-12 lg:col-span-7 lg:col-start-1 mt-10">
             <p className="text-lg lg:text-xl text-ink-900/70 leading-relaxed max-w-xl">
-              SecureWithQuan helps gyms, restaurants, offices, and local shops
-              find the real risks hiding in their technology — then tells you
-              exactly what to do about it. No jargon. No long-term contracts.
-              No fear tactics.
+              SecureWithQuan helps independent medical and dental practices, 
+              law firms, financial advisors, and small businesses find the real 
+              risks hiding in their technology — then tells you exactly what to do about it. 
+              Compliance-driven assessments for HIPAA, FTC Safeguards, and ABA cybersecurity guidance. 
+              No jargon. No long-term contracts.
             </p>
 
             {/* CTAs */}
