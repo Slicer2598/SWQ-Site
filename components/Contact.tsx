@@ -4,7 +4,6 @@ import { useState } from "react";
 import {
   ArrowRightIcon,
   MailIcon,
-  PhoneIcon,
   MapPinIcon,
   CheckIcon,
   LockIcon,
@@ -133,17 +132,6 @@ export default function Contact() {
                 </div>
               </a>
               <a
-                className="flex items-center gap-4 group"
-              >
-                <span className="w-11 h-11 rounded-full border border-paper-50/15 flex items-center justify-center group-hover:border-accent group-hover:text-accent transition-colors">
-                </span>
-                <div>
-                  <div className="text-xs uppercase tracking-wider text-paper-50/45 font-mono">
-                  </div>
-                  <div className="text-paper-50 link-underline">
-                  </div>
-                </div>
-              </a>
               <div className="flex items-center gap-4">
                 <span className="w-11 h-11 rounded-full border border-paper-50/15 flex items-center justify-center">
                   <MapPinIcon className="w-4 h-4" strokeWidth={1.75} />
