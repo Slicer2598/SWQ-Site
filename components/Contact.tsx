@@ -44,12 +44,12 @@ export default function Contact() {
         setSubmitted(true);
       } else {
         setError(
-          "Something went wrong. Please email me directly at securewithquan@gmail.com"
+          "Something went wrong. Please email me directly at quan@swqllc.com"
         );
       }
     } catch {
       setError(
-        "Something went wrong. Please email me directly at securewithquan@gmail.com"
+        "Something went wrong. Please email me directly at quan@swqllc.com"
       );
     } finally {
       setSubmitting(false);
@@ -117,7 +117,7 @@ export default function Contact() {
                 Prefer to reach out directly?
               </div>
               <a
-                href="mailto:securewithquan@gmail.com"
+                href="mailto:quan@swqllc.com"
                 className="flex items-center gap-4 group"
               >
                 <span className="w-11 h-11 rounded-full border border-paper-50/15 flex items-center justify-center group-hover:border-accent group-hover:text-accent transition-colors">
@@ -128,7 +128,7 @@ export default function Contact() {
                     Email
                   </div>
                   <div className="text-paper-50 link-underline">
-                    securewithquan@gmail.com
+                    quan@swqllc.com
                   </div>
                 </div>
               </a>
@@ -136,11 +136,9 @@ export default function Contact() {
                 className="flex items-center gap-4 group"
               >
                 <span className="w-11 h-11 rounded-full border border-paper-50/15 flex items-center justify-center group-hover:border-accent group-hover:text-accent transition-colors">
-                  <PhoneIcon className="w-4 h-4" strokeWidth={1.75} />
                 </span>
                 <div>
                   <div className="text-xs uppercase tracking-wider text-paper-50/45 font-mono">
-                    Phone
                   </div>
                   <div className="text-paper-50 link-underline">
                   </div>
@@ -295,10 +293,10 @@ export default function Contact() {
                       business day with a few times that work for your call.
                       If it's urgent, feel free to email me directly at{" "}
                       <a
-                        href="mailto:securewithquan@gmail.com"
+                        href="mailto:quan@swqllc.com"
                         className="text-ink-900 link-underline"
                       >
-                        securewithquan@gmail.com
+                        quan@swqllc.com
                       </a>
                       .
                     </p>
