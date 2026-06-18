@@ -131,7 +131,6 @@ export default function Contact() {
                   </div>
                 </div>
               </a>
-              <a
               <div className="flex items-center gap-4">
                 <span className="w-11 h-11 rounded-full border border-paper-50/15 flex items-center justify-center">
                   <MapPinIcon className="w-4 h-4" strokeWidth={1.75} />
