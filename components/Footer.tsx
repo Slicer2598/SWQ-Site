@@ -1,4 +1,4 @@
-import { ShieldIcon, MailIcon, PhoneIcon, MapPinIcon } from "./Icons";
+import { ShieldIcon, MailIcon, MapPinIcon } from "./Icons";
 
 export default function Footer() {
   return (
@@ -93,26 +93,14 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li>
                 <a
-                  href="mailto:hello@securewithquan.com"
+                  href="mailto:quan@swqllc.com"
                   className="flex items-start gap-3 text-ink-900/75 hover:text-ink-900 transition-colors group"
                 >
                   <MailIcon
                     className="w-4 h-4 mt-0.5 flex-shrink-0 text-ink-900/50 group-hover:text-accent-dark transition-colors"
                     strokeWidth={1.75}
                   />
-                  <span>hello@securewithquan.com</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tel:+15555550123"
-                  className="flex items-start gap-3 text-ink-900/75 hover:text-ink-900 transition-colors group"
-                >
-                  <PhoneIcon
-                    className="w-4 h-4 mt-0.5 flex-shrink-0 text-ink-900/50 group-hover:text-accent-dark transition-colors"
-                    strokeWidth={1.75}
-                  />
-                  <span>(555) 555-0123</span>
+                  <span>quan@swqllc.com</span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-ink-900/75">
