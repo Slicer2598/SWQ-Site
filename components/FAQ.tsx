@@ -5,12 +5,16 @@ import { PlusIcon, MinusIcon } from "./Icons";
 
 const faqs = [
   {
+    q: "Do you work with regulated industries like healthcare, financial, or legal?",
+    a: "Yes — these are some of my most common engagements. I conduct HIPAA Security Risk Assessments for independent medical and dental practices, FTC Safeguards Rule risk assessments for CPAs, RIAs, and other non-bank financial firms, and ABA-aligned cybersecurity assessments for small to mid-size law firms. Each engagement is built around the specific compliance requirements of your industry.",
+  },
+  {
     q: "I'm a small business. Do I really need this?",
     a: "If you use email, Wi-Fi, a payment system, or store customer information, then yes — you have something worth protecting. The good news: small businesses don't need enterprise-grade security. A few right-sized steps will put you ahead of 90% of small businesses out there.",
   },
   {
-    q: "Isn't cybersecurity really expensive?",
-    a: "It can be — if you hire a large firm built for big companies. My engagements are flat-rate and range from $250 to $900. That's roughly the price of a weekend at a nice hotel, not a six-figure contract. And the free 30-minute consultation is designed to tell you honestly whether you even need paid work yet.",
+    q: "How much does this cost?",
+    a: "Pricing depends on scope and industry. General small business engagements typically range from $300 to $900. Compliance-driven assessments — HIPAA, FTC Safeguards, or ABA — typically range from $1,200 to $2,500 depending on size and complexity. Every engagement is flat-rate, quoted up front, with no hourly surprises. The free 30-minute consultation is designed to tell you honestly whether you need paid work yet, and what the right scope would be.",
   },
   {
     q: "I don't understand tech. Will this be over my head?",
@@ -18,19 +22,19 @@ const faqs = [
   },
   {
     q: "I already have an IT person (or a guy who handles our computers). Isn't that enough?",
-    a: "Your IT person keeps things running — that's different from cybersecurity. Think of it like this: a great mechanic isn't the same thing as a safety inspector. I work alongside your existing IT help, not instead of them. In fact, many of my clients' IT folks appreciate having a second, independent set of eyes.",
+    a: "Your IT person keeps things running — that's different from cybersecurity. Think of it like this: a great mechanic isn't the same thing as a safety inspector. I work alongside your existing IT help, not instead of them. Compliance assessments in particular are a separate document IT support typically doesn't produce.",
   },
   {
     q: "Are you going to try to sell me a bunch of software or a monthly contract?",
-    a: "No. I don't resell products, I don't take commissions from vendors, and I don't do retainers. You hire me for a specific engagement, I finish the work, and if you need me again later — you know where to find me.",
+    a: "No. I don't resell products, I don't take commissions from vendors, and I don't do retainers unless you specifically want one. You hire me for a specific engagement, I finish the work, and if you need me again later — you know where to find me.",
   },
   {
     q: "What if I start working with you and realize I need more than I thought?",
-    a: "That's fine and it happens. Every service is standalone, so you can add another one whenever you're ready. There's no pressure and no ladder I'm trying to push you up. Many clients start with a Checkup and come back six months later for training or policies.",
+    a: "That's fine and it happens. Every service is standalone, so you can add another one whenever you're ready. There's no pressure and no ladder I'm trying to push you up. Many clients start with a Checkup or an SRA and come back later for training or written policies.",
   },
   {
     q: "How long does any of this take?",
-    a: "Most engagements wrap up in one to three weeks from kickoff. The Wireless Review can be done in an afternoon. The Policy Advisory is the longest at about three weeks because we're writing documents together. You'll always know the timeline up front.",
+    a: "Most engagements wrap up in one to three weeks from kickoff. A wireless review takes an afternoon. A HIPAA Security Risk Assessment is typically a single on-site visit plus a few days to produce the report. The Policy Advisory is the longest at about three weeks because we're writing documents together. You'll always know the timeline up front.",
   },
   {
     q: "Will anyone find out you were looking at our systems?",
