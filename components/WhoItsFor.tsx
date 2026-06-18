@@ -1,11 +1,12 @@
 export default function WhoItsFor() {
   const businesses = [
-    "Gyms & Studios",
-    "Restaurants & Cafés",
-    "Retail Shops",
-    "Medical & Dental Offices",
+    "Medical & Dental Practices",
     "Law Firms",
+    "CPA & Financial Advisor Firms",
     "Real Estate Offices",
+    "Retail Shops",
+    "Restaurants & Cafes",
+    "Gyms & Studios",
     "Salons & Spas",
     "Auto Shops",
   ];
